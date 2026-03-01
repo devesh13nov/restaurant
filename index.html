@@ -800,9 +800,8 @@ function validateForm() {
 function processPayPalPayment() {
   if (!validateForm()) return;
 
-  // In production, replace this block with the PayPal JS SDK integration:
-  // <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
-  // paypal.Buttons({ createOrder: ..., onApprove: ... }).render('#paypal-button-container');
+  // In production, integrate PayPal JS SDK with your Client ID and use
+  // paypal.Buttons({ createOrder, onApprove }).render('#paypal-button-container')
 
   // DEMO: Simulates a successful PayPal payment
   const orderId = 'AAHAR' + Math.floor(10000 + Math.random() * 90000);
