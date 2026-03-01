@@ -481,9 +481,9 @@
     <div class="cart-footer">
       <div class="cart-total">
         <span>Subtotal</span>
-        <span id="cartTotal">₹0.00</span>
+        <span id="cartTotal">£0.00</span>
       </div>
-      <p class="cart-note">+ Delivery charge ₹40 · Taxes included</p>
+      <p class="cart-note">+ Delivery charge £2.99 · Taxes included</p>
       <button class="checkout-btn" id="checkoutBtn" onclick="openCheckout()" disabled>Proceed to Checkout →</button>
     </div>
   </div>
@@ -499,10 +499,10 @@
       <h3>Order Summary</h3>
       <div id="modalSummaryItems"></div>
       <div class="summary-line">
-        <span>Delivery</span><span>₹40.00</span>
+        <span>Delivery</span><span>£2.99</span>
       </div>
       <div class="summary-line total">
-        <span>Total</span><span id="modalTotal">₹0.00</span>
+        <span>Total</span><span id="modalTotal">£0.00</span>
       </div>
     </div>
 
@@ -577,45 +577,45 @@
 // ======== MENU DATA ========
 const menuData = {
   'breakfast-south': [
-    { id: 1, name: 'Masala Dosa', desc: 'Crispy rice crepe with spiced potato filling, served with sambar & chutneys', price: 120 },
-    { id: 2, name: 'Plain Idli (2 pcs)', desc: 'Steamed soft rice cakes served with sambar and coconut chutney', price: 80 },
-    { id: 3, name: 'Medu Vada (2 pcs)', desc: 'Crispy lentil donuts, light inside, served with sambar & chutney', price: 90 },
-    { id: 4, name: 'Uttapam', desc: 'Thick rice pancake topped with onions, tomatoes, and green chillies', price: 110 },
-    { id: 5, name: 'Pongal', desc: 'Comforting rice & moong dal porridge tempered with ghee and pepper', price: 100 },
-    { id: 6, name: 'Upma', desc: 'Savory semolina porridge with mustard seeds, curry leaves, and vegetables', price: 70 },
+    { id: 1, name: 'Masala Dosa', desc: 'Crispy rice crepe with spiced potato filling, served with sambar & chutneys', price: 7.50 },
+    { id: 2, name: 'Plain Idli (2 pcs)', desc: 'Steamed soft rice cakes served with sambar and coconut chutney', price: 5.50 },
+    { id: 3, name: 'Medu Vada (2 pcs)', desc: 'Crispy lentil donuts, light inside, served with sambar & chutney', price: 5.99 },
+    { id: 4, name: 'Uttapam', desc: 'Thick rice pancake topped with onions, tomatoes, and green chillies', price: 6.99 },
+    { id: 5, name: 'Pongal', desc: 'Comforting rice & moong dal porridge tempered with ghee and pepper', price: 6.50 },
+    { id: 6, name: 'Upma', desc: 'Savory semolina porridge with mustard seeds, curry leaves, and vegetables', price: 5.50 },
   ],
   'breakfast-north': [
-    { id: 7, name: 'Aloo Paratha (2 pcs)', desc: 'Whole wheat flatbread stuffed with spiced mashed potatoes, served with curd', price: 130 },
-    { id: 8, name: 'Poha', desc: 'Flattened rice cooked with onions, mustard, turmeric, and lemon juice', price: 70 },
-    { id: 9, name: 'Chole Bhature', desc: 'Fluffy deep-fried bread served with spicy chickpea curry', price: 160 },
-    { id: 10, name: 'Besan Chilla', desc: 'Savory gram flour pancake with onion and coriander, served with chutney', price: 90 },
+    { id: 7, name: 'Aloo Paratha (2 pcs)', desc: 'Whole wheat flatbread stuffed with spiced mashed potatoes, served with curd', price: 7.50 },
+    { id: 8, name: 'Poha', desc: 'Flattened rice cooked with onions, mustard, turmeric, and lemon juice', price: 5.50 },
+    { id: 9, name: 'Chole Bhature', desc: 'Fluffy deep-fried bread served with spicy chickpea curry', price: 8.99 },
+    { id: 10, name: 'Besan Chilla', desc: 'Savory gram flour pancake with onion and coriander, served with chutney', price: 6.50 },
   ],
   'lunch-rice': [
-    { id: 11, name: 'Dal Tadka + Rice', desc: 'Yellow lentils tempered with ghee, cumin, garlic & spices with steamed rice', price: 150 },
-    { id: 12, name: 'Rajma Chawal', desc: 'Creamy kidney bean curry in tomato gravy served with basmati rice', price: 160 },
-    { id: 13, name: 'Veg Biryani', desc: 'Fragrant basmati rice cooked with mixed vegetables & whole spices', price: 200 },
-    { id: 14, name: 'Sambar Rice', desc: 'South Indian lentil vegetable stew mixed with rice, a comfort classic', price: 130 },
-    { id: 15, name: 'Curd Rice', desc: 'Cooling rice mixed with fresh curd, tempered with mustard and curry leaves', price: 110 },
+    { id: 11, name: 'Dal Tadka + Rice', desc: 'Yellow lentils tempered with ghee, cumin, garlic & spices with steamed rice', price: 9.99 },
+    { id: 12, name: 'Rajma Chawal', desc: 'Creamy kidney bean curry in tomato gravy served with basmati rice', price: 10.50 },
+    { id: 13, name: 'Veg Biryani', desc: 'Fragrant basmati rice cooked with mixed vegetables & whole spices', price: 11.99 },
+    { id: 14, name: 'Sambar Rice', desc: 'South Indian lentil vegetable stew mixed with rice, a comfort classic', price: 9.50 },
+    { id: 15, name: 'Curd Rice', desc: 'Cooling rice mixed with fresh curd, tempered with mustard and curry leaves', price: 7.99 },
   ],
   'lunch-roti': [
-    { id: 16, name: 'Palak Paneer + Roti', desc: 'Creamy spinach curry with soft paneer cubes, served with 3 rotis', price: 200 },
-    { id: 17, name: 'Mix Veg Thali', desc: '2 sabzi, dal, rice, 3 rotis, salad, papad and pickle — complete meal', price: 250 },
-    { id: 18, name: 'Matar Paneer + Roti', desc: 'Green peas and paneer in rich tomato-onion gravy, served with 3 rotis', price: 210 },
-    { id: 19, name: 'Baingan Bharta + Roti', desc: 'Smoky roasted eggplant mash with onions and spices, with 3 rotis', price: 180 },
+    { id: 16, name: 'Palak Paneer + Roti', desc: 'Creamy spinach curry with soft paneer cubes, served with 3 rotis', price: 12.99 },
+    { id: 17, name: 'Mix Veg Thali', desc: '2 sabzi, dal, rice, 3 rotis, salad, papad and pickle — complete meal', price: 14.99 },
+    { id: 18, name: 'Matar Paneer + Roti', desc: 'Green peas and paneer in rich tomato-onion gravy, served with 3 rotis', price: 13.50 },
+    { id: 19, name: 'Baingan Bharta + Roti', desc: 'Smoky roasted eggplant mash with onions and spices, with 3 rotis', price: 11.99 },
   ],
   'dinner-dal': [
-    { id: 20, name: 'Dal Makhani', desc: 'Slow-cooked black lentils in buttery tomato cream sauce — a North Indian icon', price: 190 },
-    { id: 21, name: 'Paneer Butter Masala', desc: 'Rich, creamy tomato-cashew gravy with fresh paneer cubes', price: 230 },
-    { id: 22, name: 'Kadai Paneer', desc: 'Paneer and peppers tossed in a robust kadai masala sauce', price: 220 },
-    { id: 23, name: 'Chana Masala', desc: 'Hearty chickpea curry in tangy, spice-forward tomato gravy', price: 170 },
-    { id: 24, name: 'Navratan Korma', desc: 'Nine-vegetable creamy curry with nuts, raisins and mild spices', price: 210 },
+    { id: 20, name: 'Dal Makhani', desc: 'Slow-cooked black lentils in buttery tomato cream sauce — a North Indian icon', price: 11.99 },
+    { id: 21, name: 'Paneer Butter Masala', desc: 'Rich, creamy tomato-cashew gravy with fresh paneer cubes', price: 13.99 },
+    { id: 22, name: 'Kadai Paneer', desc: 'Paneer and peppers tossed in a robust kadai masala sauce', price: 13.50 },
+    { id: 23, name: 'Chana Masala', desc: 'Hearty chickpea curry in tangy, spice-forward tomato gravy', price: 10.99 },
+    { id: 24, name: 'Navratan Korma', desc: 'Nine-vegetable creamy curry with nuts, raisins and mild spices', price: 13.99 },
   ],
   'dinner-bread': [
-    { id: 25, name: 'Butter Naan (2 pcs)', desc: 'Soft leavened bread baked in tandoor, brushed with butter', price: 80 },
-    { id: 26, name: 'Laccha Paratha (2 pcs)', desc: 'Multi-layered flaky whole wheat paratha, lightly buttered', price: 90 },
-    { id: 27, name: 'Jeera Rice', desc: 'Cumin-tempered basmati rice, light and aromatic', price: 120 },
-    { id: 28, name: 'Veg Pulao', desc: 'Mildly spiced rice cooked with seasonal vegetables and whole spices', price: 150 },
-    { id: 29, name: 'Tandoori Roti (3 pcs)', desc: 'Rustic whole wheat bread baked in clay oven', price: 70 },
+    { id: 25, name: 'Butter Naan (2 pcs)', desc: 'Soft leavened bread baked in tandoor, brushed with butter', price: 3.99 },
+    { id: 26, name: 'Laccha Paratha (2 pcs)', desc: 'Multi-layered flaky whole wheat paratha, lightly buttered', price: 4.50 },
+    { id: 27, name: 'Jeera Rice', desc: 'Cumin-tempered basmati rice, light and aromatic', price: 4.99 },
+    { id: 28, name: 'Veg Pulao', desc: 'Mildly spiced rice cooked with seasonal vegetables and whole spices', price: 6.50 },
+    { id: 29, name: 'Tandoori Roti (3 pcs)', desc: 'Rustic whole wheat bread baked in clay oven', price: 3.50 },
   ],
 };
 
@@ -651,7 +651,7 @@ function renderMenu() {
           <p>${item.desc}</p>
         </div>
         <div class="card-right">
-          <div class="price">₹${item.price} <span>incl. tax</span></div>
+          <div class="price">£${item.price} <span>incl. tax</span></div>
           <div id="btn-${item.id}">
             <button class="add-btn" onclick="addToCart(${item.id})">+ Add</button>
           </div>
@@ -716,10 +716,10 @@ function updateCartUI() {
       <div class="cart-item">
         <div>
           <div class="cart-item-name">${item.name}</div>
-          <div class="cart-item-meta">₹${item.price} × ${item.qty}</div>
+          <div class="cart-item-meta">£${item.price} × ${item.qty}</div>
         </div>
         <div class="cart-item-right">
-          <div class="cart-item-price">₹${(item.price * item.qty).toFixed(2)}</div>
+          <div class="cart-item-price">£${(item.price * item.qty).toFixed(2)}</div>
           <div class="qty-ctrl" style="justify-content:flex-end; margin-top:6px;">
             <button onclick="decreaseQty(${item.id})">−</button>
             <span>${item.qty}</span>
@@ -730,7 +730,7 @@ function updateCartUI() {
     `).join('');
   }
 
-  document.getElementById('cartTotal').textContent = `₹${subtotal.toFixed(2)}`;
+  document.getElementById('cartTotal').textContent = `£${subtotal.toFixed(2)}`;
 }
 
 // ======== TAB SWITCH ========
@@ -756,16 +756,16 @@ function handleOverlayClick(e) {
 function openCheckout() {
   const items = Object.values(cart);
   const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0);
-  const total = subtotal + 40;
+  const total = subtotal + 2.99;
 
   document.getElementById('modalSummaryItems').innerHTML = items.map(i => `
     <div class="summary-line">
       <span>${i.name} × ${i.qty}</span>
-      <span>₹${(i.price * i.qty).toFixed(2)}</span>
+      <span>£${(i.price * i.qty).toFixed(2)}</span>
     </div>
-  `).join('') + `<div class="summary-line"><span>Subtotal</span><span>₹${subtotal.toFixed(2)}</span></div>`;
+  `).join('') + `<div class="summary-line"><span>Subtotal</span><span>£${subtotal.toFixed(2)}</span></div>`;
 
-  document.getElementById('modalTotal').textContent = `₹${total.toFixed(2)}`;
+  document.getElementById('modalTotal').textContent = `£${total.toFixed(2)}`;
   closeCart();
   document.getElementById('checkoutModal').classList.add('open');
 }
